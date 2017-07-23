@@ -1,0 +1,132 @@
+.draw-border {
+  box-shadow: inset 0 0 0 4px orange;
+  color: orange;
+  transition: color 0.25s 0.08333s;
+  position: relative; }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0; }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px; }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px; }
+  .draw-border:hover {
+    color: purple; }
+    .draw-border:hover::before, .draw-border:hover::after {
+      border-color: purple;
+      transition: border-color 0s, width 0.25s, height 0.25s;
+      width: 100%;
+      height: 100%; }
+    .draw-border:hover::before {
+      transition-delay: 0s, 0s, 0.25s; }
+    .draw-border:hover::after {
+      transition-delay: 0s, 0.25s, 0s; }
+
+.draw-aboutme {
+  box-shadow: inset 0 0 0 4px purple;
+  color: purple;
+  transition: color 0.25s 0.08333s;
+  position: relative; }
+  .draw-aboutme::before, .draw-aboutme::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0; }
+  .draw-aboutme::before {
+    border-top-width: 4px;
+    border-right-width: 4px; }
+  .draw-aboutme::after {
+    border-bottom-width: 4px;
+    border-left-width: 4px; }
+  .draw-aboutme:hover {
+    color: papayawhip; }
+    .draw-aboutme:hover::before, .draw-aboutme:hover::after {
+      border-color: papayawhip;
+      transition: border-color 0s, width 0.25s, height 0.25s;
+      width: 100%;
+      height: 100%; }
+    .draw-aboutme:hover::before {
+      transition-delay: 0s, 0s, 0.25s; }
+    .draw-aboutme:hover::after {
+      transition-delay: 0s, 0.25s, 0s; }
+
+.draw-resume {
+  box-shadow: inset 0 0 0 4px papayawhip;
+  color: papayawhip;
+  transition: color 0.25s 0.08333s;
+  position: relative; }
+  .draw-resume::before, .draw-resume::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0; }
+  .draw-resume::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px; }
+  .draw-resume::after {
+    border-top-width: 4px;
+    border-right-width: 4px; }
+  .draw-resume:hover {
+    color: orange; }
+    .draw-resume:hover::before, .draw-resume:hover::after {
+      border-color: orange;
+      transition: border-color 0s, width 0.25s, height 0.25s;
+      width: 100%;
+      height: 100%; }
+    .draw-resume:hover::before {
+      transition-delay: 0s, 0s, 0.25s; }
+    .draw-resume:hover::after {
+      transition-delay: 0s, 0.25s, 0s; }
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em;
+  letter-spacing: 0.05rem;
+  height: 40px;
+  width: 77.83px;
+  position: absolute; }
+  .btn:focus {
+    outline: none; }
+
+#aboutMe {
+  left: 20%;
+  top: 50%; }
+
+#portfolio {
+  left: 45%;
+  top: 50%; }
+
+#resume {
+  left: 70%;
+  top: 50%; }
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; }
+
+/*# sourceMappingURL=personalsite.css.map */
